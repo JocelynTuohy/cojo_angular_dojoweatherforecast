@@ -1,0 +1,21 @@
+#wrapper{
+  text-align: center;
+  display: block;
+  width: 1000px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+li{
+  list-style: none;
+  display: inline-block;
+  width: 130px;
+}
+a{
+  color: blue;
+}
+/deep/ img, /deep/ #forecast {
+  display: inline-block;
+  width: 475px;
+  vertical-align: top;
+  text-align: left;
+}

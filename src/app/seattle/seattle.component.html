@@ -1,0 +1,9 @@
+<h1>{{ city.name }}</h1>
+<div id="forecast">
+  <p>Humidity: {{ city.humidity }}</p>
+  <p>Temperature (Average): {{ city.average|kToFDegrees|number:'1.0-0' }}</p>
+  <p>Temperature (High): {{ city.high|kToFDegrees|number:'1.0-0' }}</p>
+  <p>Temperature (Low): {{ city.low|kToFDegrees|number:'1.0-0' }}</p>
+  <p>Status: {{ city.status }}</p>
+</div>
+<img src="{{ city.imageurl }}" alt="{{ city.name }}">
